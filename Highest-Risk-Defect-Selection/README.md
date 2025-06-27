@@ -53,12 +53,6 @@ smart-sampling-rl/
 
 ## Installation
 
-### 1. Clone
-```bash
-git clone https://github.com/<your-org>/smart-sampling-rl.git
-cd smart-sampling-rl
-```
-
 ### 2. Python 3.10+ & virtual env (optional)
 ```bash
 python -m venv .venv
@@ -77,7 +71,7 @@ pip install -r requirements.txt
 
 Train a policy for 300k timesteps, evaluate every 20k, save checkpoints:
 ```bash
-python train.py     --timesteps 300000     --max-steps 8          # probes per wafer
+python train.py     --timesteps 300000     --max-steps 20          # probes per wafer
 ```
 
 Export the k chips with highest defect probability (top-5 by default):
